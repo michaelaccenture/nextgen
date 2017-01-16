@@ -38,17 +38,5 @@ public class Person {
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
 	}
-
-	public class PersonHydrator
-	{
-		public void hydrate(PersonData p) {
-			setFirstname(p.getFirstname());
-	    	setLastname(p.getLastname());
-	    	setAddress1(p.getAddress1());
-	    	setAddress2(p.getAddress2());
-	    	setPostcode(p.getPostcode());
-			
-		}
-	}
 	
 }
