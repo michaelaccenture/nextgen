@@ -7,7 +7,7 @@ public class Person {
 	private String address1;
 	private String address2;
 	private String postcode;
-	
+
 	public String getFirstname() {
 		return firstname;
 	}
@@ -38,5 +38,5 @@ public class Person {
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
 	}
-	
+
 }

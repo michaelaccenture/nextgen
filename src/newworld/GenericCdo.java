@@ -7,7 +7,7 @@ public class GenericCdo {
 	private String add1;
 	private String add2;
 	private String post_code;
-	
+
 	public String getFname() {
 		return fname;
 	}
@@ -42,11 +42,11 @@ public class GenericCdo {
 	public class PersonGenerator implements PersonData
 	{
 		private Person p;
-		
+
 		public PersonGenerator(){
 			p = new Person();
 		}
-		
+
 		@Override
 		public String getFirstname() {
 			return getFname();
@@ -75,12 +75,12 @@ public class GenericCdo {
 		@Override
 		public Person hydrate() {
 			p.setFirstname(getFirstname());
-	    	p.setLastname(getLastname());
-	    	p.setAddress1(getAddress1());
-	    	p.setAddress2(getAddress2());
-	    	p.setPostcode(getPostcode());
-	    	
-	    	return p;
+			p.setLastname(getLastname());
+			p.setAddress1(getAddress1());
+			p.setAddress2(getAddress2());
+			p.setPostcode(getPostcode());
+
+			return p;
 		}
 	}
 }

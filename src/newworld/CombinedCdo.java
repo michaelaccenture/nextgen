@@ -7,7 +7,7 @@ public class CombinedCdo {
 	private String add1;
 	private String add2;
 	private String post_code;
-	
+
 	public String getFname() {
 		return fname;
 	}
@@ -42,7 +42,7 @@ public class CombinedCdo {
 	public class PersonGenerator implements PersonData
 	{
 		private Person p;
-		
+
 		public PersonGenerator(){
 			p = new Person();
 		}
@@ -75,12 +75,12 @@ public class CombinedCdo {
 		@Override
 		public Person hydrate() {
 			p.setFirstname(getFirstname());
-	    	p.setLastname(getLastname());
-	    	p.setAddress1(getAddress1());
-	    	p.setAddress2(getAddress2());
-	    	p.setPostcode(getPostcode());
-	    	
-	    	return p;
+			p.setLastname(getLastname());
+			p.setAddress1(getAddress1());
+			p.setAddress2(getAddress2());
+			p.setPostcode(getPostcode());
+
+			return p;
 		}
 	}
 
