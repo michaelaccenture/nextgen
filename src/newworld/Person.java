@@ -20,6 +20,15 @@ public class Person {
 		private int age;
 		private long salary;
 		private String address;
+		
+		public Builder(){}
+		
+		public Builder(Person person){
+			sex = person.sex;
+			age = person.age;
+			salary = person.salary;
+			address = person.address;
+		}
 
 		public Builder setSex(String sex) {
 			this.sex = sex;
